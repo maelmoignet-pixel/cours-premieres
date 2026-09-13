@@ -5,7 +5,7 @@ st.set_page_config(page_title="Mes cours de maths", page_icon="📚")
 st.title("📚 Mes cours de mathématiques")
 
 # --- Config : un dictionnaire thème -> chapitres -> URL ---
-BASE_URL = "https://ton-pseudo.github.io/nom-du-repo"
+BASE_URL = "https://maelmoignet-pixel.github.io/cours-premieres"
 
 CHAPITRES = {
     "Second degré": {
