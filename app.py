@@ -4,8 +4,6 @@ import streamlit.components.v1 as components
 with open("second-degre.html", "r", encoding="utf-8") as f:
     html_content = f.read()
 
-# Specifier une hauteur ou autoriser le scroll
-components.html(html_content, height=800, scrolling=True)
 
 st.set_page_config(page_title="Mes cours de maths", page_icon="📚")
 
