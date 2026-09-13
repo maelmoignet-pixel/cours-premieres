@@ -9,7 +9,7 @@ BASE_URL = "https://ton-pseudo.github.io/nom-du-repo"
 
 CHAPITRES = {
     "Second degré": {
-        "url": f"{BASE_URL}/second-degre.html",
+        "url": f"{https://github.com/maelmoignet-pixel/cours-premieres/blob/main}/second-degre.html",
         "icone": "📐",
         "description": "Fonctions polynômes, forme canonique, équations, signe du trinôme."
     },
