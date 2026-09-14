@@ -16,11 +16,12 @@ CHAPITRES = {
         "description": "Fonctions polynômes, forme canonique, équations, signe du trinôme."
     },
     # Ajoute tes futurs chapitres ici, en suivant le même modèle :
-    # "Suites numériques": {
-    #     "url": f"{BASE_URL}/suites/suites.html",
-    #     "icone": "🔢",
-    #     "description": "Modes de génération, sens de variation, limites."
-    # },
+    #
+    "Suites numériques": {
+         "url": f"{BASE_URL}/suites/suites.html",
+         "icone": "🔢",
+         "description": "Modes de génération, sens de variation, limites."
+     },
 }
 
 st.subheader("Choisis un chapitre :")
