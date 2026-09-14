@@ -1,28 +1,25 @@
 import streamlit as st
-import streamlit.components.v1 as components
-
-with open("second-degre.html", "r", encoding="utf-8") as f:
-    html_content = f.read()
-
 
 st.set_page_config(page_title="Mes cours de maths", page_icon="📚")
 
 st.title("📚 Mes cours de mathématiques")
 
-# --- Config : un dictionnaire thème -> chapitres -> URL ---
-BASE_URL = "https://maelmoignet-pixel.github.io/cours-premieres/second-degre"
+# --- Config : URL de base de ton site GitHub Pages (racine du dépôt) ---
+BASE_URL = "https://maelmoignet-pixel.github.io/cours-premieres"
 
+# Un dictionnaire : nom du chapitre -> infos (url, icône, description)
+# Chaque chapitre vit dans son propre dossier : <nom-dossier>/<fichier>.html
 CHAPITRES = {
     "Second degré": {
-        "url": f"{BASE_URL}/second-degre.html",
+        "url": f"{BASE_URL}/second-degre/second-degre.html",
         "icone": "📐",
         "description": "Fonctions polynômes, forme canonique, équations, signe du trinôme."
     },
-    # Ajoute tes futurs chapitres ici, par exemple :
+    # Ajoute tes futurs chapitres ici, en suivant le même modèle :
     # "Suites numériques": {
-    #     "url": f"{BASE_URL}/suites.html",
+    #     "url": f"{BASE_URL}/suites/suites.html",
     #     "icone": "🔢",
-    #     "description": "Récurrence, limites, opérations."
+    #     "description": "Modes de génération, sens de variation, limites."
     # },
 }
 
