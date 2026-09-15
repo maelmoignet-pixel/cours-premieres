@@ -2,6 +2,19 @@ import streamlit as st
 
 st.set_page_config(page_title="Mes cours de maths", page_icon="📚", layout="wide")
 
+# --- Empêche les navigateurs (Chrome, etc.) de proposer/forcer une
+# traduction automatique de la page (ex: "second degré" -> "deuxième degré") ---
+st.markdown(
+    """
+    <meta name="google" content="notranslate">
+    <script>
+        document.documentElement.setAttribute('translate', 'no');
+        document.documentElement.classList.add('notranslate');
+    </script>
+    """,
+    unsafe_allow_html=True
+)
+
 # ============================================================
 # CONFIGURATION — c'est ICI que tu ajoutes tes fichiers
 # ============================================================
@@ -45,7 +58,7 @@ CATEGORIES = {
 FICHIERS = {
     "second-degre": {
         "eval_2025": [
-             {"nom": "Évaluation 1", "fichier": "second-degre-2025-eval1.html"},
+            # {"nom": "Évaluation 1 - Forme canonique", "fichier": "eval-2025-1.html"},
         ],
         "ds_2025": [
             # {"nom": "DS 1 - Second degré", "fichier": "ds-2025-1.html"},
@@ -204,7 +217,6 @@ elif st.session_state.view == "categorie":
     st.subheader(f"{cat_infos['icone']} {cat_infos['label']} — {nom_chapitre}")
 
     # Navigation rapide vers les autres catégories du même chapitre
-    st.write("Aller directement à :")
     nav_cols = st.columns(len(CATEGORIES))
     for i, (autre_cle, autre_infos) in enumerate(CATEGORIES.items()):
         with nav_cols[i]:
