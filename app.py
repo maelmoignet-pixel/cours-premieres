@@ -63,7 +63,7 @@ FICHIERS = {
              {"nom": "Évaluation 3", "fichier": "second-degre-2025-eval3.html"},
         ],
         "ds_2025": [
-            # {"nom": "DS 1", "fichier": "second-degre-2025-DS1.pdf"},
+             {"nom": "DS 1", "fichier": "second-degre-2025-DS1.pdf"},
         ],
         "eval_2026": [],
         "ds_2026": [],
