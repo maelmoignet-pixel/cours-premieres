@@ -45,7 +45,7 @@ CATEGORIES = {
 FICHIERS = {
     "second-degre": {
         "eval_2025": [
-            # {"nom": "Évaluation 1 - Forme canonique", "fichier": "eval-2025-1.html"},
+             {"nom": "Évaluation 1", "fichier": "second-degre-2025-eval1.html"},
         ],
         "ds_2025": [
             # {"nom": "DS 1 - Second degré", "fichier": "ds-2025-1.html"},
