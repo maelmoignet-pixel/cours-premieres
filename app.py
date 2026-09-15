@@ -75,7 +75,13 @@ FICHIERS = {
         "ds_2026": [],
     },
 }
-
+# Icône affichée sur le bouton selon le type de fichier
+def icone_fichier(nom_fichier):
+    return "📄" if nom_fichier.lower().endswith(".pdf") else "🌐"
+ 
+ 
+def label_ouvrir(nom_fichier):
+    return "Ouvrir le PDF ➜" if nom_fichier.lower().endswith(".pdf") else "Ouvrir ➜"
 # ============================================================
 # NAVIGATION (état de session)
 # ============================================================
