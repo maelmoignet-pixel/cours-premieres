@@ -71,7 +71,8 @@ FICHIERS = {
     },
     "suites": {
         "eval_2025": [
-            
+            {"nom": "Évaluation 1", "fichier": "suites-2025-eval1.html"},
+            {"nom": "Évaluation 2", "fichier": "suites-2025-eval2.html"},
         ],
         "ds_2025": [
             {"nom": "DS 1", "fichier": "suites-2025-DS1.pdf"},
