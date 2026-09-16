@@ -70,8 +70,15 @@ FICHIERS = {
         "ds_2026": [],
     },
     "suites": {
-        "eval_2025": [],
-        "ds_2025": [],
+        "eval_2025": [
+            
+        ],
+        "ds_2025": [
+            {"nom": "DS 1", "fichier": "suites-2025-DS1.pdf"},
+            {"nom": "DS 1 - correction", "fichier": "suites-2025-DS1-correction.pdf"},
+            {"nom": "Bac Banc 1", "fichier": "suites-2025-BB1.pdf"},
+            {"nom": "Bac Banc 1", "fichier": "suites-2025-BB1-correction.pdf"},
+        ],
         "eval_2026": [],
         "ds_2026": [],
     },
